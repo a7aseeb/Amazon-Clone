@@ -12,8 +12,16 @@
         integrity="sha384-l0/0sn63N3mskDgRYJZA6Mogihu0VY3CusdLMiwpJ9LFPklOARUcOiWEIGGmFELx"
         crossorigin="anonymous">
     </script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
     <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
+    <script src="./firebase.js"></script>
+    <script src="./script.js"></script>
+    
 </head>
 <body>
     <div class="bg-white w-full">
@@ -156,6 +164,7 @@
                     </div>
                 </div>
                 <div class="main-section-deals">
+                    <!--Hot deals section-->
                     <h1 class="text-2xl font-bold text-gray-700 mb-5">Hot Deals</h1>
                     <div class="main-section-products flex">
                         <div class="main-product">
@@ -174,6 +183,9 @@
                             <div class="product-price font-bold text-gray-500 text-lg">
                                 $290.00
                             </div>
+                            <div class="add-to-cart h-8 w-28 bg-yellow-500 flex justify-center items-center rounded-lg mt-2 text-white text-md cursor-pointer hover:bg-yellow-600">
+                                Add to cart 
+                            </div>
                         </div>
                         <div class="main-product ml-5">
                             <div class="product-image w-48 h-52 bg-white rounded-lg">
@@ -190,6 +202,9 @@
                             </div>
                             <div class="product-price font-bold text-gray-500 text-lg">
                                 $600.00
+                            </div>
+                            <div class="add-to-cart h-8 w-28 bg-yellow-500 flex justify-center items-center rounded-lg mt-2 text-white text-md cursor-pointer hover:bg-yellow-600">
+                                Add to cart 
                             </div>
                         </div>
                         <div class="main-product ml-5">
@@ -208,6 +223,9 @@
                             <div class="product-price font-bold text-gray-500 text-lg">
                                 $650.00
                             </div>
+                            <div class="add-to-cart h-8 w-28 bg-yellow-500 flex justify-center items-center rounded-lg mt-2 text-white text-md cursor-pointer hover:bg-yellow-600">
+                                Add to cart 
+                            </div>
                         </div>
                         <div class="main-product ml-5">
                             <div class="product-image w-48 h-52 bg-white rounded-lg">
@@ -224,6 +242,9 @@
                             </div>
                             <div class="product-price font-bold text-gray-500 text-lg">
                                 $350.00
+                            </div>
+                            <div class="add-to-cart h-8 w-28 bg-yellow-500 flex justify-center items-center rounded-lg mt-2 text-white text-md cursor-pointer hover:bg-yellow-600">
+                                Add to cart 
                             </div>
                         </div>
                     </div>
