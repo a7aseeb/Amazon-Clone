@@ -22,6 +22,7 @@
     <script src="./firebase.js"></script>
     <script src="./script.js"></script>
     <script src="./header.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
     
 </head>
 <body>
@@ -63,7 +64,7 @@
             </div>
         </div>
         <div class="main h-full flex">
-            <div class="main-sidebar w-1/5 bg-gray-900 border-gray-700 border-t-2 p-6">
+            <div class="main-sidebar hidden md:block w-1/5 bg-gray-900 border-gray-700 border-t-2 p-6">
                 <div class="sidebar-categories">
                     <div class="sidebar-main-category text-yellow-500 flex font-bold p-2 bg-gray-700 rounded-lg cursor-pointer">
                         <span class="w-8"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -167,87 +168,8 @@
                 <div class="main-section-deals">
                     <!--Hot deals section-->
                     <h1 class="text-2xl font-bold text-gray-700 mb-5">Hot Deals</h1>
-                    <div class="main-section-products flex">
-                        <!-- <div class="main-product">
-                            <div class="product-image w-48 h-52 bg-white rounded-lg">
-                                <img class ="w-full h-full object-contain p-4" src="https://m.media-amazon.com/images/I/41V5KQ500IL.jpg" alt="">
-                            </div>
-                            <div class="product-name text-gray-700 font-bold mt-2 text-sm">
-                                Nintendo Switch(2019)
-                            </div>
-                            <div class="product-make text-green-700 font-bold">
-                                Nintendo
-                            </div>
-                            <div class="product-rating text-yellow-300 my-1">
-                                ⭐⭐⭐⭐ 4
-                            </div>
-                            <div class="product-price font-bold text-gray-500 text-lg">
-                                $290.00
-                            </div>
-                            <div class="add-to-cart h-8 w-28 bg-yellow-500 flex justify-center items-center rounded-lg mt-2 text-white text-md cursor-pointer hover:bg-yellow-600">
-                                Add to cart 
-                            </div>
-                        </div>
-                        <div class="main-product ml-5">
-                            <div class="product-image w-48 h-52 bg-white rounded-lg">
-                                <img class ="w-full h-full object-contain p-4" src="https://m.media-amazon.com/images/I/71RqV-R-BkL._SX450_.jpg" alt="">
-                            </div>
-                            <div class="product-name text-gray-700 font-bold mt-2 text-sm">
-                                HP Pavilion 11th Gen
-                            </div>
-                            <div class="product-make text-green-700 font-bold">
-                                HP
-                            </div>
-                            <div class="product-rating text-yellow-300 my-1">
-                                ⭐⭐⭐ 3
-                            </div>
-                            <div class="product-price font-bold text-gray-500 text-lg">
-                                $600.00
-                            </div>
-                            <div class="add-to-cart h-8 w-28 bg-yellow-500 flex justify-center items-center rounded-lg mt-2 text-white text-md cursor-pointer hover:bg-yellow-600">
-                                Add to cart 
-                            </div>
-                        </div>
-                        <div class="main-product ml-5">
-                            <div class="product-image w-48 h-52 bg-white rounded-lg">
-                                <img class ="w-full h-full object-contain p-4" src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-12-pro-family-hero?wid=940&hei=1112&fmt=jpeg&qlt=80&.v=1604021663000" alt="">
-                            </div>
-                            <div class="product-name text-gray-700 font-bold mt-2 text-sm">
-                                Iphone 12 Pro
-                            </div>
-                            <div class="product-make text-green-700 font-bold">
-                                Apple
-                            </div>
-                            <div class="product-rating text-yellow-300 my-1">
-                                ⭐⭐⭐⭐⭐ 5
-                            </div>
-                            <div class="product-price font-bold text-gray-500 text-lg">
-                                $650.00
-                            </div>
-                            <div class="add-to-cart h-8 w-28 bg-yellow-500 flex justify-center items-center rounded-lg mt-2 text-white text-md cursor-pointer hover:bg-yellow-600">
-                                Add to cart 
-                            </div>
-                        </div>
-                        <div class="main-product ml-5">
-                            <div class="product-image w-48 h-52 bg-white rounded-lg">
-                                <img class ="w-full h-full object-contain p-4" src="https://cdn-4.nikon-cdn.com/e/Q5NM96RZZo-YRYNeYvAi9beHK4x3L-wmtXfawgokSdJshIBBUUdmog==/Views/353_1618_D780_front.png" alt="">
-                            </div>
-                            <div class="product-name text-gray-700 font-bold mt-2 text-sm">
-                                Nikon D780
-                            </div>
-                            <div class="product-make text-green-700 font-bold">
-                                Nikon
-                            </div>
-                            <div class="product-rating text-yellow-300 my-1">
-                                ⭐⭐⭐⭐4
-                            </div>
-                            <div class="product-price font-bold text-gray-500 text-lg">
-                                $350.00
-                            </div>
-                            <div class="add-to-cart h-8 w-28 bg-yellow-500 flex justify-center items-center rounded-lg mt-2 text-white text-md cursor-pointer hover:bg-yellow-600">
-                                Add to cart 
-                            </div>
-                        </div> -->
+                    <div class="main-section-products flex flex-wrap">
+                        <!--main products from db-->
                     </div>
                 </div>
             </div>

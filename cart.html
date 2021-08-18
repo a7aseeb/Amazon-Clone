@@ -15,6 +15,7 @@
     <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
     <script src="./firebase.js"></script>
     <script src="./header.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
     <script src="./cart.js"></script>
     <title>Amazon 2.0</title>
     <script src="https://cdn.jsdelivr.net/npm/jdenticon@3.1.1/dist/jdenticon.min.js" async
@@ -28,7 +29,9 @@
     <div class="bg-white w-full">
         <div class="header flex bg-gray-900 h-16 items-center">
             <div class="logo w-1/5 h-16 ml-10">
+                <a href="index.html">
                 <img class="w-28 h-16 object-contain" src="./img/amazon-logo.png" alt="Amazon Logo">
+                </a>
             </div>
             <input class="h-9 w-30 bg-gray-800 border-gray-500 border-opacity-75 rounded-l-xl px-3 text-white ml-6 focus:outline-none placeholder-white" id="search" type="text" placeholder="Search...">
             <div class="categories h-9 w-30 bg-gray-800 border-gray-500 border-opacity-75 px-3 text-white flex items-center">
@@ -62,8 +65,8 @@
                   <svg class="h-12 w-12 rounded" data-jdenticon-value="Haseeb"></svg>
             </div>
         </div>
-        <div class="main h-full flex">
-            <div class="main-sidebar w-1/5 bg-gray-900 border-gray-700 border-t-2 p-6">
+        <div class="main h-screen flex">
+            <div class="main-sidebar hidden md:block w-1/5 bg-gray-900 border-gray-700 border-t-2 p-6">
                 <!--sidebar-->
                 <div class="sidebar-categories">
                     <div class="sidebar-main-category text-yellow-500 flex font-bold p-2 bg-gray-700 rounded-lg cursor-pointer">
@@ -129,7 +132,7 @@
                     <div class="total-cost">
                         <h2 class="text-gray-400">Total Cost</h2>
                         <div class="total-cost-number font-bold text-2xl text-gray-600">
-                            $1,439.00
+                                <!--Total cost from DB-->
                         </div>
                     </div>
                     <div class="complete-order-button w-56 flex items-center justify-center p-4 ml-5 bg-yellow-500 rounded-lg font-bold text-gray-800 hover:bg-yellow-600 cursor-pointer">

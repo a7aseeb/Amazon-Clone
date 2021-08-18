@@ -45,7 +45,7 @@ function generateItems(items){
         let doc =  document.createElement("div");
         doc.classList.add("main-product", "mr-5")
         doc.innerHTML = `
-            <div class="product-image w-48 h-52 bg-white rounded-lg">
+            <div class="product-image w-48 h-52 bg-white rounded-lg mt-5">
                 <img class ="w-full h-full object-contain p-4" src="${item.image}" alt="">
             </div>
             <div class="product-name text-gray-700 font-bold mt-2 text-sm">
@@ -58,7 +58,7 @@ function generateItems(items){
                 ⭐⭐⭐⭐⭐ ${item.rating}
             </div>
             <div class="product-price font-bold text-gray-500 text-lg">
-                $ ${item.price}
+                ${numeral(item.price).format("$0,0.00")}
             </div>
         `
 
